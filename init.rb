@@ -1,1 +1,1 @@
-require 'javascript_auto_include'
+require 'thumble_monks/javascript_auto_include'
