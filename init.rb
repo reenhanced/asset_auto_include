@@ -1,1 +1,1 @@
-require 'thumble_monks/javascript_auto_include'
+require 'thumble_monks/asset_auto_include'
