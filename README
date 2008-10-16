@@ -36,6 +36,7 @@ Install
        /accounts
          show-new-edit-create.js
    /stylesheets
+     /app
        /users
          controller.css
          edit.css
