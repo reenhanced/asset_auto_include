@@ -1,7 +1,6 @@
-require 'ruby-debug'
 require 'pathname'
 
-module ThumbleMonks # - like the kebab.
+module ThumbleMonks
   module AssetAutoInclude
     # I don't want to just blindly re-open AssetTagHelper.
     # Because of Ruby method lookup, I can't just include another module
