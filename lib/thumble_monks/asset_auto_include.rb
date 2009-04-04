@@ -21,7 +21,10 @@ module ThumbleMonks
 
       def stylesheet_auto_include_tags
         files = autoloadable_files(asset_autoinclude_options[:css_autoinclude_full_path], "css")
-        stylesheet_link_tag(*files)
+        print_files = autoloadable_files(asset_autoinclude_options[:css_autoinclude_full_path], "print.css")
+        print_files.push({:media => 'print'})
+
+        stylesheet_link_tag(*files) << stylesheet_link_tag(*print_files)
       end
       
     private

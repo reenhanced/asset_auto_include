@@ -46,7 +46,15 @@ class AssetAutoIncludeTest < ActionView::TestCase
       should "include any files also available for the current action" do
         assert_select 'link[href$=foo/bar/new-index.css]'
       end
+
+      should "include print files also available for the current action" do
+        assert_select 'link[href$=foo/bar/new.print.css][media="print"]'
+      end
   
+      should "not include print files as non-print media" do
+        assert_select 'link[href$=foo/bar/new.print.css][media="screen"]', :count => 0
+      end
+
       should "not include any files for other actions" do
         assert_select 'link[href$=foo/bar/index.css]', :count => 0
       end
