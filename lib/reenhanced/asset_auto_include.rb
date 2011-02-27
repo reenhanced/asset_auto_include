@@ -1,6 +1,6 @@
 require 'pathname'
 
-module ThumbleMonks
+module Reenhanced
   module AssetAutoInclude
     # I don't want to just blindly re-open AssetTagHelper.
     # Because of Ruby method lookup, I can't just include another module
@@ -52,6 +52,6 @@ module ThumbleMonks
       
     end # AssetTagHelper
   end   # AssetAutoInclude
-end     # ThumbleMonks
+end     # Reenhanced
 
-ActionView::Helpers::AssetTagHelper.module_eval(&ThumbleMonks::AssetAutoInclude::AssetTagHelper)
+ActionView::Helpers::AssetTagHelper.module_eval(&Reenhanced::AssetAutoInclude::AssetTagHelper)

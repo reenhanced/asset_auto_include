@@ -1,6 +1,8 @@
 AssetAutoInclude
 =====================
 
+Now compatible with Rails 3!
+
 == Homepage
   http://github.com/reenhanced/asset_auto_include
   
@@ -8,7 +10,7 @@ AssetAutoInclude
 
 Install
  * Run the following command:
- script/plugin install git://github.com/reenhanced/asset_auto_include.git
+ rails plugin install git://github.com/reenhanced/asset_auto_include.git
  
 == Usage
 
