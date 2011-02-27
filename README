@@ -2,13 +2,13 @@ AssetAutoInclude
 =====================
 
 == Homepage
-  http://github.com/gabrielg/asset_auto_include
+  http://github.com/reenhanced/asset_auto_include
   
 == Resources
 
 Install
  * Run the following command:
- script/plugin install git://github.com/gabrielg/asset_auto_include.git
+ script/plugin install git://github.com/reenhanced/asset_auto_include.git
  
 == Usage
 
@@ -56,5 +56,6 @@ Install
 == Acknowledgements 
 
   Thanks to http://github.com/kernow/javascript_auto_include and
-  http://github.com/abradburne/javascript_auto_include for the base to work
+  http://github.com/abradburne/javascript_auto_include and
+  http://github.com/gabrielg/javascript_auto_include for the base to work
   from.
